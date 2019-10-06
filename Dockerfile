@@ -6,8 +6,8 @@ WORKDIR /work
 ENTRYPOINT ["/work/font-patcher"]
 
 
-ENV FONTFORGE_VERSION=20161005 \
-	NERDFONTS_VERSION=1.0.0
+ENV FONTFORGE_VERSION=20190801 \
+	NERDFONTS_VERSION=2.0.0
 
 RUN apt-get update && \
 	# Install dependencies
@@ -17,7 +17,7 @@ RUN apt-get update && \
 		autoconf automake libtool libltdl7-dev \
 		libxml2-dev libuninameslist-dev libspiro-dev \
 		python-dev libpango1.0-dev libcairo2-dev \
-		chrpath git && \
+		chrpath git python-configparser && \
 	# Install fontforge
 	TMP=$(mktemp -d) && \
 	cd ${TMP} && \
