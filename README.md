@@ -1,5 +1,7 @@
 # docker-nerd-font-patcher
 
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/pocka/nerd-font-patcher)](https://hub.docker.com/r/pocka/nerd-font-patcher)
+
 Dockerized version of [Nerd Fonts Patcher](https://github.com/ryanoasis/nerd-fonts#font-patcher).
 
 ## Usage
